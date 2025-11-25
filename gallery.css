@@ -1,0 +1,185 @@
+    body {
+      margin: 0;
+      font-family: Arimo, Arial, sans-serif;
+    }
+
+    a:focus {
+      outline: 3px dashed #fff;
+      outline-offset: 4px;
+    }
+
+    .navbar {
+      background: #65100a;
+      padding: 20px 40px;
+      letter-spacing: 1px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo a {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    li a:focus {
+      text-decoration: underline;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .welcome-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .welcome-text h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 40px;
+      color: #7b1113;
+    }
+
+    hr {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+      color: #7b1113;
+    }
+
+    .content img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 1024px) {
+      .logo a {
+        font-size: 34px;
+      }
+      li a {
+        font-size: 20px;
+      }
+      .welcome-text h1 {
+        font-size: 42px;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      .content {
+        font-size: 18px;
+      }
+      .title {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        height: 240px;
+      }
+      .welcome-text h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .content {
+        font-size: 17px;
+      }
+      .title {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navdiv {
+        flex-direction: column;
+        text-align: center;
+      }
+      ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .banner {
+        height: 200px;
+      }
+      .welcome-text h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 26px;
+      }
+      .content {
+        font-size: 16px;
+      }
+      .title {
+        font-size: 16px;
+      }
+    }
+

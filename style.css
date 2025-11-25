@@ -1,0 +1,197 @@
+    body {
+      margin: 0;
+      font-family: Arimo, Arial, sans-serif;
+    }
+
+    a:focus {
+      outline: 3px dashed #fff;
+      outline-offset: 4px;
+    }
+
+    .navbar {
+      background: #65100a;
+      padding: 20px 40px;
+      letter-spacing: 1px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo a {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    li a:focus {
+      text-decoration: underline;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .welcome-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 0px 20px;
+    }
+
+    .welcome-text h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .welcome-text h4 {
+      font-size: 26px;
+      margin: 5px 0 0 0;
+    }
+
+    .filipino-art {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .filipino-art h2 {
+      font-size: 42px;
+      color: #7b1113;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .filipino-art p {
+      font-size: 22px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #7b1113;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background-color: #a01b1f;
+    }
+
+    hr {
+      width: 60%;
+      margin: 40px auto;
+    }
+
+    @media (max-width: 1024px) {
+      .welcome-text h1 {
+        font-size: 42px;
+      }
+      .welcome-text h4 {
+        font-size: 24px;
+      }
+      .filipino-art h2 {
+        font-size: 38px;
+      }
+      .filipino-art p {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo a {
+        font-size: 34px;
+      }
+      li a {
+        font-size: 20px;
+      }
+      .banner {
+        height: 240px;
+      }
+      .welcome-text h1 {
+        font-size: 34px;
+      }
+      .welcome-text h4 {
+        font-size: 20px;
+      }
+      .filipino-art h2 {
+        font-size: 32px;
+      }
+      .filipino-art p {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navdiv {
+        flex-direction: column;
+        text-align: center;
+      }
+      ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .banner {
+        height: 200px;
+      }
+      .welcome-text h1 {
+        font-size: 28px;
+      }
+      .welcome-text h4 {
+        font-size: 18px;
+      }
+      .filipino-art h2 {
+        font-size: 28px;
+      }
+      .filipino-art p {
+        font-size: 17px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 10px 22px;
+      }
+    }
+
