@@ -81,7 +81,7 @@
       margin: 0;
     }
 
-    .welcome-text h4 {
+    .welcome-text h2 {
       font-size: 26px;
       margin: 5px 0 0 0;
     }
@@ -130,7 +130,7 @@
       .welcome-text h1 {
         font-size: 42px;
       }
-      .welcome-text h4 {
+      .welcome-text h2 {
         font-size: 24px;
       }
       .filipino-art h2 {
@@ -154,7 +154,7 @@
       .welcome-text h1 {
         font-size: 34px;
       }
-      .welcome-text h4 {
+      .welcome-text h2 {
         font-size: 20px;
       }
       .filipino-art h2 {
@@ -180,7 +180,7 @@
       .welcome-text h1 {
         font-size: 28px;
       }
-      .welcome-text h4 {
+      .welcome-text h2 {
         font-size: 18px;
       }
       .filipino-art h2 {
