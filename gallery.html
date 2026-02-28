@@ -1,80 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Filipino Canvas - Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <style>
 
-  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filipino Canvas - Gallery</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav role="navigation" class="navbar" aria-label="Main Navigation">
-      <div class="navdiv">
-        <div class="logo"><a href="index.html">Filipino Canvas</a></div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Filipino Canvas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <section class="banner">
-    <img src="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FbPXfUmP40qfD63Qqc0K_ew%252FTurner-deluge.jpg&width=910"
-         alt="A classical artwork displayed for the Filipino Canvas gallery">
+    <h1>Filipino Art Gallery</h1>
+  </section>
 
-    <div class="welcome-text">
-      <h1 class="famous">Famous Filipino Paintings</h1>
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Famous Filipino Paintings</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="A1.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Planting Rice</h5>
+              <p class="card-text">Fernando Amorsolo (1921)</p>
+              <button class="btn btn-custom" onclick="showInfo(1)">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="A2.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Spoliarium</h5>
+              <p class="card-text">Juan Luna (1884)</p>
+              <button class="btn btn-custom" onclick="showInfo(2)">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="A3.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">The Blood Compact</h5>
+              <p class="card-text">Juan Luna (1886)</p>
+              <button class="btn btn-custom" onclick="showInfo(3)">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="A4.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Las Virgenes Cristianas Expuestas al Populacho</h5>
+              <p class="card-text">Félix Resurrección Hidalgo (1884)</p>
+              <button class="btn btn-custom" onclick="showInfo(4)">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="A5.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">La Laguna Estigia</h5>
+              <p class="card-text">Félix Resurrección Hidalgo (1887)</p>
+              <button class="btn btn-custom" onclick="showInfo(5)">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
-  <hr>
-  <div role="main" class="content">
-    <p>1. <span class="title">Madonna of the Slums</span> by Vicente Manansala</p>
-    <p>Madonna of the Slums by Vicente Manansala (1950) is a painting that shows a mother and child who migrated from the countryside to Manila after World War II, only to face poverty in the city. The artwork reflects the struggles of urban migration—showing how hope for a better life often turned into hardship. It highlights poverty, resilience, and the human spirit, reminding viewers of the social realities in postwar Philippines.</p>
-    <img src="A1.png" alt="Madonna of the Slums painting">
-    <p><b>Title:</b> Madonna of the Slums<br>
-      <b>Artist:</b> Vicente Manansala<br>
-      <b>Year:</b> 1950</p>
-    
-    <br><br>
-    
-    <p>2. <span class="title">Spoliarium</span> by Juan Luna</p>
-    <p>Spoliarium by Juan Luna (1884) is a monumental painting that shows Roman gladiators being dragged after battle, symbolizing human suffering and injustice. The artwork reflects the oppression experienced by Filipinos under Spanish rule. It serves as a powerful reminder of sacrifice, resilience, and the fight for freedom, inspiring unity and nationalism among the Filipino people.</p>
-    <img src="A2.png" alt="Juan Luna’s Spoliarium painting">
-    <p><b>Title:</b> Spoliarium<br>
-      <b>Artist:</b> Juan Luna<br>
-      <b>Year:</b> 1884</p>
-    
-    <br><br>
-    <p>3. <span class="title">The Blood Compact</span> by Juan Luna</p>
-    <p>The Blood Compact by Juan Luna (1886) portrays the historic Sandugo between Spanish explorer Miguel López de Legazpi and Bohol chieftain Datu Sikatuna, where they sealed their friendship and alliance by drinking wine mixed with their own blood. The painting symbolizes unity, loyalty, and mutual respect despite differences in race and culture. It also reflects themes of diplomacy and the blending of Filipino and foreign influences that shaped the nation’s history.</p>
-    <img src="A3.png" alt="The Blood Compact painting">
-    <p><b>Title:</b> The Blood Compact<br>
-     <b>Artist:</b> Juan Luna<br>
-     <b>Year:</b> 1886</p>
 
-     <br><br>
-
-    <p>4. <span class="title">Las Virgenes Cristianas Expuestas al Populacho</span> by Félix Hidalgo</p>
-    <p>Las Virgenes Cristianas Expuestas al Populacho (1884) is a history painting by Félix Resurrección Hidalgo. The painting depicts two Christian virgins stripped of their garments and exposed to a hostile crowd in Ancient Rome. The work is a powerful commentary on injustice, the abuse of power, and the suffering of the innocent. It also carries allegorical weight for Filipinos under colonial rule, suggesting that Filipino dignity could be stripped and exposed in unjust ways—and yet, their spirit could remain.</p>
-    <img src="A4.png" alt="Las Virgenes Cristianas painting">
-    <p><b>Title:</b> Las Virgenes Cristianas Expuestas al Populacho<br>
-      <b>Artist:</b> Félix Hidalgo<br>
-      <b>Year:</b> 1884</p>
-    
-    <br><br>
-    
-    <p>5. <span class="title">La Laguna Estigia</span> by Félix Hidalgo</p>
-    <p>La Laguna Estigia (The River Styx) is a famous painting by Félix Resurrección Hidalgo. It portrays souls being ferried across the mythical River Styx in Greek mythology, symbolizing the passage from life to death. Thee painting reflects themes of mortality, human struggle, and the inevitability of death. It also shows Hidalgo’s mastery of form and emotion, blending classical mythology with a universal message about the fragility of human life and the journey of the soul.</p>
-    <img src="A5.png" alt="La Laguna Estigia painting">
-    <p><b>Title:</b> La Laguna Estigia<br>
-      <b>Artist:</b> Félix Hidalgo<br>
-      <b>Year:</b> 1887</p>
-    
+  <div class="modal fade" id="infoModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const paintings = {
+      1: {
+        title: "Planting Rice",
+        desc: "Created in the 1930s, this painting by Fernando Amorsolo shows Filipino farmers working in golden rice fields, capturing the warmth of sunlight and the beauty of rural life."
+      
+      },
+      2: {
+        title: "Spoliarium",
+        desc: "Created in 1884 by Juan Luna, Spoliarium depicts fallen Roman gladiators dragged away from the arena. It symbolizes the suffering of Filipinos under Spanish colonization and became a powerful representation of nationalism."
+      },
+      3: {
+        title: "The Blood Compact",
+        desc: "Painted in 1886 by Juan Luna, this artwork shows the historic pact between Datu Sikatuna and Miguel López de Legazpi in 1565, symbolizing friendship and diplomacy between Filipinos and Spaniards."
+      },
+      4: {
+        title: "Las Virgenes Cristianas Expuestas al Populacho",
+        desc: "Completed in 1884 by Félix Resurrección Hidalgo, this painting portrays Christian maidens exposed to a hostile Roman crowd. It symbolizes injustice, suffering, and moral strength."
+      },
+      5: {
+        title: "La Laguna Estigia",
+        desc: "Painted in 1887 by Félix Resurrección Hidalgo, this artwork represents the River Styx from Greek mythology, symbolizing death, transition, and the journey of the soul."
+      }
+    };
+
+    function showInfo(id) {
+      document.getElementById("modalTitle").innerText = paintings[id].title;
+      document.getElementById("modalBody").innerText = paintings[id].desc;
+
+      let modal = new bootstrap.Modal(document.getElementById('infoModal'));
+      modal.show();
+    }
+  </script>
+
 </body>
+
 </html>
